@@ -73,18 +73,22 @@
   )
 
   // Configure the page and multi-column properties.
-  set columns(gutter: 12pt)
+  set columns(gutter: 6.35mm)
   set page(
     columns: 2,
     paper: paper-size,
     // The margins depend on the paper size.
     margin: if paper-size == "a4" {
-      (x: 41.5pt, top: 80.51pt, bottom: 89.51pt)
+      (
+        x: 12.9mm,
+        top: 19mm,
+        bottom: 43mm
+      )
     } else {
       (
-        x: (50pt / 216mm) * 100%,
-        top: (55pt / 279mm) * 100%,
-        bottom: (64pt / 279mm) * 100%,
+        x: 15.875mm,
+        top: 19mm,
+        bottom: 25.4mm,
       )
     }
   )
